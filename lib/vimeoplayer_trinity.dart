@@ -4,6 +4,7 @@ import 'package:better_player/better_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vimeoplayer_trinity/src/controls_config.dart';
+
 import 'src/quality_links.dart';
 
 //Video player class
@@ -158,8 +159,9 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
 
   @override
   void dispose() {
-    // _controller.dispose();
-    // initFuture = null;
+    if (_betterPlayerController != null) {
+      _betterPlayerController!.dispose();
+    }
 
     super.dispose();
   }
