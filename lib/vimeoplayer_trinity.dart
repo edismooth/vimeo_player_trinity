@@ -87,7 +87,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
     fullScreenByDefault = widget.fullScreenByDefault;
 
     //Create class
-    _quality = QualityLinks(widget.id);
+    _quality = QualityLinks(widget.id, password: widget.password);
 
     //Initializing video controllers when receiving data from Vimeo
     _quality.getQualitiesSync().then((value) {

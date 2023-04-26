@@ -364,7 +364,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.2.1"
+    version: "0.2.3"
   visibility_detector:
     dependency: transitive
     description:
