@@ -12,6 +12,9 @@ class VimeoPlayer extends StatefulWidget {
   /// Vimeo video id
   final String? id;
 
+  /// Vimeo password for private videos
+  final String? password;
+
   /// Whether player should autoplay video
   final bool autoPlay;
 
@@ -44,6 +47,7 @@ class VimeoPlayer extends StatefulWidget {
 
   const VimeoPlayer({
     required this.id,
+    this.password,
     this.autoPlay = false,
     this.looping = false,
     this.controlsConfig,
